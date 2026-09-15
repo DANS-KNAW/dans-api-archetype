@@ -15,7 +15,7 @@
 #
 
 # Fail on error
-set -e
+set -euo pipefail
 
 mvn dans-build-resources:get-helper-script
 mvn initialize # To ensure API definition is downloaded
