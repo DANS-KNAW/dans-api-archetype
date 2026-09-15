@@ -18,17 +18,20 @@
         <fileSet filtered="true" encoding="UTF-8">
             <directory>docs</directory>
             <includes>
-                <include>*</include>
+                <include>**/*</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
-            <directory>src/main/openapi/</directory>
+            <directory>src/main/openapi</directory>
             <includes>
                 <include>**/*</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory>.github</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
             <directory/>
@@ -37,6 +40,9 @@
             </includes>
             <excludes>
                 <exclude>pom.xml</exclude>
+                <exclude>docs</exclude>
+                <exclude>src</exclude>
+                <exclude>.github</exclude>
             </excludes>
         </fileSet>
     </fileSets>
